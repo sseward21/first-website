@@ -80,6 +80,26 @@ li{
  </style>
 <img src="http://cloverhillprimary.org/wp-content/uploads/2018/02/nba-basketball.jpg"> <style width="304" height="146" margin-top:104px>
 </style>
+<script>
+var bio = document.getElementById("bio");
+var music = document.getElementById("music");
+var basketball = document.getElementById("basketball");
+function showBio () {
+bio.style.visibility = "visible";
+music.style.visibility= "hidden";
+basketball.style.visibility= "hidden";
+}
+function showMusic () {
+music.style.visibility = "visible";
+bio.style.visibility= "hidden";
+basketball.style.visibility= "hidden";
+}
+function showBasketball () {
+basketball.style.visibility = "visible";
+bio.style.visibility= "hidden";
+music.style.visibility = "hidden";
+}
+</script>
 </head>
 
 <body>
@@ -122,25 +142,5 @@ li{
 </div>
 <div class="content-box" id="basketball">
      </div>
-     <script>
-     var bio = document.getElementById("bio");
-var music = document.getElementById("music");
-var basketball = document.getElementById("basketball");
-function showBio () {
-bio.style.visibility = "visible";
-music.style.visibility= "hidden";
-basketball.style.visibility= "hidden";
-}
-function showMusic () {
-music.style.visibility = "visible";
-bio.style.visibility= "hidden";
-basketball.style.visibility= "hidden";
-}
-function showBasketball () {
-basketball.style.visibility = "visible";
-bio.style.visibility= "hidden";
-music.style.visibility = "hidden";
-}
-</script>
 </body>
 </html>
