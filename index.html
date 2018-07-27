@@ -9,18 +9,48 @@
   position:absolute;
 
 }
-#bio{
-  background-color:
-    rgb(200,175,180);
+#school{
+  background-color: white;
+    padding-left: 45px;
+    padding-right:45px;
+    width: 100%
 }
 #music{
-  background-color:
-    rgb(192,192,192);
+  background-color: white;
+    width: 100%
 }
 #basketball{
+  background-color: white;
+  padding-left: 45px;
+  padding-right:45px;
+  Width: 100%
+}
+#basketball div{
   background-color:
     rgb(242,222,179);
+    margin: 0 auto;
+    width: 60%
+
+
 }
+#music div{
+  background-color:
+    rgb(192,192,192);
+    margin:0 auto;
+    width: 60%
+
+
+
+}
+#school div{
+  background-color:
+    rgb(200,175,180);
+    margin: 0 auto;
+    width: 60%;
+
+}
+
+
 #buttons{
  margin: 0 auto;
   width: 40%;
@@ -33,7 +63,7 @@
     padding: 10px;
     text-align:center;
   text-decoration: none;
-  border-radius: 4xp;
+  border-radius: 4px;
 }
 #buttons a:active {
   transform: translateY(2px);
@@ -53,7 +83,7 @@ h3 {
 }
 .column {
   width: 30%;
-    background-color: rgb(35, 226, 214);
+    background-color: rgb(222, 222, 222);
   /*flex: 50%;*/
 }
  h3 em {
@@ -81,22 +111,22 @@ li{
 <img src="http://cloverhillprimary.org/wp-content/uploads/2018/02/nba-basketball.jpg"> <style width="304" height="146" margin-top:104px>
 </style>
 <script>
-var bio = document.getElementById("bio");
+var school = document.getElementById("school");
 var music = document.getElementById("music");
 var basketball = document.getElementById("basketball");
-function showBio () {
-bio.style.visibility = "visible";
+function showschool () {
+school.style.visibility = "visible";
 music.style.visibility= "hidden";
 basketball.style.visibility= "hidden";
 }
 function showMusic () {
 music.style.visibility = "visible";
-bio.style.visibility= "hidden";
+school.style.visibility= "hidden";
 basketball.style.visibility= "hidden";
 }
 function showBasketball () {
 basketball.style.visibility = "visible";
-bio.style.visibility= "hidden";
+school.style.visibility= "hidden";
 music.style.visibility = "hidden";
 }
 </script>
@@ -131,16 +161,45 @@ music.style.visibility = "hidden";
     <li> I also love to swim!
 </ol>
 <div id="buttons">
-     <a onclick="showBio()"> Bio </a>
+     <a onclick="showschool()"> school </a>
   <a onclick="showMusic()"> Music</a>
   <a onclick="showBasketball()"> Basketball </a>
 </div>
 
-<div class="content-box" id="bio">
+<div class="content-box" id="school">
+  <div><p> Phillips academy is an amazing place to be if it is the right place for you. There is no denying the fact that we have all the resources kids my age and older could ever need. Phillips provides us with everything we need and more and I am grateful for having the opportunity to study here. Phillips is also a place where you struggle. The environment is one of competition and has most people on edge. For some the workload is something that they can't handle, but for others it the way that phillips academy changes you, and sometimes in a way you don't want to be change. These struggles make it very difficult to go back home and be the person you used to be. Philips is a great place with lots of resources,  and tons of struggle.
+</p></div>
   </div>
 <div class="content-box" id= "music">
+  <div><p> Music is something that means the world to me. Music can take you to different places and change people for the better. On Campus I am part of a coed acapella group and an all girls acapella group. I also sing in the chorus and take vocal lessons during the year. Chorus was one of the many ways I consistently found joy during those weeks where it felt like i couldn't go on. There is a family within that group. I believe all artist find comfort in their craft and every time I sing I feel comforted by a group of students who love music just as I do. I also sing on my own in talent show and competition. I will hopefully have a youtube account up by the end of the summer and hope to rise as a leader within the singing community.
+ </p></div>
 </div>
 <div class="content-box" id="basketball">
-     </div>
+  <div>
+  <p>
+    Basketball is something that means everything to me. I started playing basketball in the second grade after my best friend convinced me to come to one practice. The first day of practice I cried because I couldn’t do what the other girls did, but i never imagined that i would be where i am today because of basketball. I am now on the varsity basketball team for phillips academy . i also play on the super competitive AAu team  called the mass rivals. At the moments almost all the girls on my team have offers from colleges such a the university of minnesota and george washington. Basketball has become a way out for me. It got me accepted to phillips academy and hopefully I will get offers from colleges to play at the next level. My coaches push all the girls in my program to their limit and break us down so they are able to build us up. I know about hard work and I am able to push through the hard times.
+
+ </p></div>
+</div>
+     <script>
+     var school = document.getElementById("school");
+     var music = document.getElementById("music");
+     var basketball = document.getElementById("basketball");
+     function showschool () {
+     school.style.visibility = "visible";
+     music.style.visibility= "hidden";
+     basketball.style.visibility= "hidden";
+     }
+     function showMusic () {
+     music.style.visibility = "visible";
+     school.style.visibility= "hidden";
+     basketball.style.visibility= "hidden";
+     }
+     function showBasketball () {
+     basketball.style.visibility = "visible";
+     school.style.visibility= "hidden";
+     music.style.visibility = "hidden";
+     }
+     </script>
 </body>
 </html>

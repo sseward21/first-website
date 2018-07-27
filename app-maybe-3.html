@@ -1,0 +1,72 @@
+<html>
+<head>
+  <body>
+    <style>
+    body {
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX11980681.jpg");
+}
+h1{
+  margin:0 auto;
+}
+button{
+  margin:0 auto;
+}
+p{
+  text-align: center;
+  font-size: large;
+}
+p.thick {
+    font-weight: bold;
+}
+div{
+  margin: 0 auto;
+}
+#instructions {
+  margin-top: 185px;
+}
+#inputdiv {
+  margin-top: 175px;
+  text-align: center;
+}
+#outputdisplay {
+  text-align: center;
+  margin-top: 150px;
+}
+#link {
+  margin-top: 115px;
+}
+</style>
+<div id="instructions">
+  <h1><em>Welcome to the Subtraction Machine</em></h1>
+  <p>Use this app to subtract large and small numbers together. All you must do is insert a number in the space provided and submit it. Your numbers will automatically be subtracted. Enjoy!
+ </p>
+</div>
+<div id=inputdiv>
+<input id="input" type="text"/>
+<button onclick="updateOutput()">Submit</button>
+<div id="outputdisplay">
+<p> The output is: </p>
+<p id="output"> 0</p>
+</div>
+</div>
+<p id="link">
+ Check out my addition app! <a href="">
+</p>
+
+<script>
+var myOutput = 0;
+
+// this gets called when the button is clicked
+function updateOutput() {
+  var theInput = document.getElementById("input");
+  var newValue = theInput.value;
+  myOutput = myOutput - Number(newValue);
+
+  var theOutput = document.getElementById("output");
+  theOutput.innerHTML = myOutput;
+}
+</script>
+<style>
+</body>
+</head>
+<html>

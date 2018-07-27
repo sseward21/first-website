@@ -1,0 +1,43 @@
+<html>
+<head>
+  <body>
+    <script>
+var Name1 = " ";
+var Name2 = " ";
+var adjective = " ";
+var verb = " ";
+var MadlibMessage = " ";
+var Cname1Input = " ";
+var Cname2Input = " ";
+var AdjectiveInput = " ";
+var VerbInput = " ";
+onEvent( "CreatBtn", "click", function(){
+Name1 = getText("Cname1Input");
+Name2 = getText("Cname2Input");
+adjective = getText("AdjectiveInput");
+verb = getText("VerbInput");
+Name1 = Name1.toUpperCase();
+Name2 = Name2.toUpperCase();
+adjective = adjective.toUpperCase();
+verb = verb.toUpperCase();
+MadlibMessage = “Phillips academy was founded by“+Name1+” a true scholar. /n/n “+Name1+”  was a “+adjective+” man with a best friend named” +Name2;
+MadlibMessage = MadlibMessage+ “Now Phillips academy is run by “+Name2+”. /n/n students now “+verb+ at “+Name2+” because of his policies.
+setText("MadlibText", MadlibMessage);
+ console.log( "message");
+console.log(Name1);
+console.log(Name2);
+console.log(adjective);
+console.log(Verb);
+setScreen("MadlibScreen" );
+} );
+onEvent("playAgainBtn", "click", function(){
+setText( "Cname1Input", " ");
+setText( "Cname2Input", " ");
+setText( "AdjectiveInput", " ");
+setText( "verbInput", " ");
+setScreen("StartMadlibScreen");
+});
+</script>
+</body>
+</head>
+</html>
